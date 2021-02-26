@@ -140,19 +140,22 @@ body {
 .banner_img {
   position: relative;
   padding: 0 30px;
-  margin-top: 150px;
+  margin-top: 110px;
+  height: 650px;
+  overflow: hidden;
 }
 
 /* Services */
 
 .services {
   background: #1f2235;
-  padding: 100px;
+  padding: 100px 0;
+  color: #fff;
 }
 
 .common {
-  width: 33.333;
-  margin: 0 auto;
+  width: 33.33333333333333%;
+  margin: 20px auto;
   text-align: center;
 }
 
@@ -162,20 +165,140 @@ body {
   color: #ff4a57;
   font-size: 16px;
 }
-
 .mainHeader {
   font-size: 32px;
   margin-bottom: 20px;
+  color: #fff;
 }
-
 .mainContent {
   font-size: 16px;
   color: #dfdfdf;
 }
-
 .commonBorder {
   background: #ff4a57;
   height: 3px;
   width: 100px;
-  margin: 10px auto;
+  margin: 30px auto;
+}
+
+.services__box {
+  padding: 40px;
+  background: #23263a;
+  color: #fff;
+  margin: 20px;
+  transition: all 0.5s linear;
+}
+.services__box:hover {
+  background: #ff4a57;
+}
+.commonIcons {
+  font-size: 40px;
+  color: #ff4a57;
+  margin-bottom: 15px;
+}
+.services__box:hover .commonIcons {
+  color: #fff;
+}
+.services__box-header {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.services__box-p {
+  font-size: 14px;
+  color: #dfdfdf;
+}
+
+/*About*/
+.about {
+  width: 100%;
+  height: 100%;
+  background: #23263a;
+  padding: 100px 0;
+}
+.about__img {
+  padding: 30px;
+}
+.about__img img {
+  width: 300px;
+  height: 400px;
+}
+.about__info {
+  color: #fff;
+}
+.about__info h1 {
+  margin-bottom: 30px;
+}
+.about__info-p1 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.about__info-p2 {
+  font-size: 14px;
+}
+
+.info__contacts {
+  margin-top: 20px;
+}
+.info__contacts strong {
+  color: #ff4a57;
+}
+.info__contacts p {
+  margin-top: 3px;
+}
+.info__contacts .col-6 {
+  margin: 10px 0;
+}
+
+@media (max-width: 765px) {
+  .container {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .col-4 {
+    width: 20%;
+  }
+  .navbar__right {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: #1f2235;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .navbar__right li a {
+    display: block;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  .toggle {
+    display: flex;
+  }
+  .banner__img img {
+    display: none;
+  }
+  .header__section h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .header__section p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  .common {
+    width: 100%;
+  }
+  .h-650 {
+    height: auto;
+  }
 }

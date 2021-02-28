@@ -15,9 +15,9 @@
 
 #cardMain {
   background-color: #23263a;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
-  width: 100vw;
+  width: 80vw;
 }
 #cardMain #cards-wrapper {
   left: 50%;
@@ -68,14 +68,14 @@
   transform: translateY(-50%) rotate(10deg);
 }
 #cardMain #cards-wrapper #cards .card-wrapper.selected {
-  height: 800px;
+  height: 400px;
   top: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
-  width: 560px;
+  width: 280px;
 }
 #cardMain #cards-wrapper #cards .card-wrapper.selected .card {
-  height: 800px;
-  width: 560px;
+  height: 600px;
+  width: 420px;
 }
 #cardMain #cards-wrapper #cards .card-wrapper.selected .card .icon {
   top: 20px;
@@ -117,7 +117,7 @@
 }
 #cardMain #cards-wrapper #cards .card-wrapper .card .content .title h1 {
   color: #23263a;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 300;
   text-align: center;
 }
@@ -127,7 +127,7 @@
 }
 #cardMain #cards-wrapper #cards .card-wrapper .card .content .text p {
   color: #787878;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 300;
   text-align: center;
 }

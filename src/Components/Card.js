@@ -2,7 +2,17 @@ import "./Card.css";
 import classNames from "classnames";
 import FaApple from "react-icons";
 import React, { useEffect } from "react";
-import { FaFontAwesome, FaTimesCircle, FaBusAlt } from "react-icons/fa";
+import {
+  FaFontAwesome,
+  FaTimesCircle,
+  FaBusAlt,
+  FaReact,
+  FaNode,
+  FaAws,
+  FaUniversity,
+  FaQuestion,
+  FaAndroid,
+} from "react-icons/fa";
 
 const Card = (props) => {
   const getStyles = () => {
@@ -36,12 +46,18 @@ const Card = (props) => {
           <div className="text">
             <p className="class-name">{props.text}</p>
           </div>
-          <button
+          <div className="class-name">
+            <div onClick={handleClose} className="close-button">
+              <FaTimesCircle size="2x" />
+            </div>
+          </div>
+
+          {/* <button
             className={("close-button", "class-name")}
             onClick={handleClose}
           >
             <FaTimesCircle />
-          </button>
+          </button> */}
         </div>
       );
     }
@@ -50,8 +66,20 @@ const Card = (props) => {
 
   const renderIcon = () => {
     switch (props.icon) {
-      case "fas fa-bus-alt":
-        return <FaBusAlt className={props.icon} />;
+      case "university":
+        return <FaUniversity className={props.icon} />;
+        break;
+      case "react":
+        return <FaReact className={props.icon} />;
+        break;
+      case "node":
+        return <FaNode className={props.icon} />;
+        break;
+      case "question":
+        return <FaQuestion className={props.icon} />;
+        break;
+      case "android":
+        return <FaAndroid className={props.icon} />;
         break;
       default:
         return <div></div>;
@@ -97,25 +125,32 @@ const Card = (props) => {
 };
 const RenderCard = (props) => {
   const cards = [
-    { id: 1, icon: "fas fa-bus-alt", title: "Bus", text: "A bus." },
-    { id: 2, icon: "fas fa-plane", title: "Plane", text: "A bus that flies." },
+    { id: 1, icon: "university", title: "Education", text: "A bus." },
+    {
+      id: 2,
+      icon: "react",
+      title: "React - Frontend",
+      text: "I code websites in react super smoothly",
+    },
+
     {
       id: 3,
-      icon: "fas fa-taxi",
-      title: "Taxi",
-      text: "A small bus that costs more than a bus.",
-    },
-    {
-      id: 4,
-      icon: "fas fa-train",
-      title: "Train",
+      icon: "question",
+      title: "My Special Skills",
       text: "A bunch of buses tied together.",
     },
     {
+      id: 4,
+      icon: "node",
+      title: "NodeJS - Backend",
+      text: "I code backend in nodejs super smootly",
+    },
+    {
       id: 5,
-      icon: "fas fa-bicycle",
-      title: "Bicycle",
-      text: "The smallest of buses with two wheels.",
+      icon: "android",
+      title: "Android Development",
+      text:
+        "I develop and responsive android apps in android studio and flutter",
     },
   ];
   const [selectedCard, setSelectedCard] = React.useState(null);

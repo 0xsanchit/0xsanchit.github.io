@@ -16,8 +16,8 @@
 #cardMain {
   background-color: #23263a;
   height: 80vh;
-  overflow: hidden;
-  width: 80vw;
+  overflow: auto;
+  width: 100%;
 }
 #cardMain #cards-wrapper {
   left: 50%;

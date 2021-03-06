@@ -52,8 +52,8 @@ const About = (props) => {
             </div>
           </div>
         </div>
-        <div className="row  h-650 alignCenter">
-          <div className="col-4">
+        <div className="row">
+          <div className="col-12" className="renderCards">
             <RenderCard />
           </div>
         </div>

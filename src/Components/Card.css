@@ -27,9 +27,9 @@
   padding: 50px;
 }
 #cardMain #cards-wrapper #cards {
-  height: 500px;
+  height: 50vh;
   position: relative;
-  width: 1000px;
+  width: 80vw;
 }
 #cardMain #cards-wrapper #cards .card-wrapper {
   height: 400px;

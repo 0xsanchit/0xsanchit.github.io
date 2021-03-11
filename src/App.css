@@ -156,8 +156,13 @@ body {
 
 .services {
   background: #1f2235;
-  padding: 100px 0;
+  padding: 130px;
   color: #fff;
+}
+
+.services_container {
+  height: 75vh;
+  width: 100%;
 }
 
 .common {

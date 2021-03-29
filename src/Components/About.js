@@ -52,10 +52,10 @@ const About = (props) => {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-12" className="renderCards">
-            <RenderCard />
-          </div>
+        {/* <div className="row"> */}
+        <div className="col-12" className="renderCards">
+          <RenderCard />
+          {/* </div> */}
         </div>
       </div>
     </div>

@@ -37,11 +37,13 @@ body {
   font-weight: 600;
   color: aqua;
   text-decoration: aqua;
+  margin-left: 10%;
 }
 
 .navbar_right {
   display: flex;
   list-style-type: none;
+  margin-right: 5%;
 }
 
 .navbar_right li a {
@@ -224,9 +226,9 @@ body {
 /*About*/
 .about {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background: #23263a;
-  padding: 0;
+  padding: 10px;
 }
 .about__img {
   padding: 30px;
@@ -267,11 +269,14 @@ body {
 }
 
 .renderCards {
+  display: flex;
+  height: auto;
+  margin-top: auto;
+  width: 100vw;
   text-align: center;
-  width: 100%;
-  height: 40vh;
   align-items: center;
   align-self: center;
+  transform: scale(0.8);
 }
 
 @media (max-width: 765px) {

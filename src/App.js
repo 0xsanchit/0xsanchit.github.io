@@ -11,11 +11,11 @@ import ContactUs from "./Components/ContactUs";
 function App() {
   return (
     <div>
-      {/* <Nav />
+      <Nav />
       <Banner />
       <About />
       <Services />
-      <Experience /> */}
+      <Experience />
       <ContactUs />
       <Footer />
     </div>

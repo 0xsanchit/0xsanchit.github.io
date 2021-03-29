@@ -157,11 +157,11 @@ function Experience() {
             <div
               data-mobiletext="Quarter 4"
               data-index="1"
-              class="quarter q4 y2016 dot complete"
+              class="quarter q4 y2016 dot complete active"
             ></div>
             <div
-              data-mobiletext="2017"
-              data-timelinelabel="Open store"
+              data-mobiletext="2019"
+              data-timelinelabel="1st Year"
               data-index="2"
               class="year y2017 dot complete"
             ></div>
@@ -186,8 +186,8 @@ function Experience() {
               class="quarter q4 y2017 dot"
             ></div>
             <div
-              data-mobiletext="2018"
-              data-timelinelabel="Hire first staff"
+              data-mobiletext="2020"
+              data-timelinelabel="2nd Year"
               data-index="6"
               class="year y2018 dot"
             ></div>
@@ -212,8 +212,8 @@ function Experience() {
               class="quarter q4 y2018 dot"
             ></div>
             <div
-              data-mobiletext="2019"
-              data-timelinelabel="Expand product offerings"
+              data-mobiletext="2021"
+              data-timelinelabel="3rd Year"
               data-index="10"
               class="year y2019 dot"
             ></div>
@@ -238,8 +238,8 @@ function Experience() {
               class="quarter q4 y2019 dot"
             ></div>
             <div
-              data-mobiletext="2020"
-              data-timelinelabel="Open second store"
+              data-mobiletext="2022"
+              data-timelinelabel="4th Year"
               data-index="14"
               class="year y2020 dot"
             ></div>

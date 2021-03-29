@@ -22,19 +22,19 @@ const Banner = () => {
               <div className="header_section">
                 <ul className="header_ul">
                   <li>
-                    <FaLinkedin />
+                    <FaLinkedin className="social-icon" />
                   </li>
                   <li>
-                    <FaYoutube />
+                    <FaYoutube className="social-icon" />
                   </li>
                   <li>
-                    <FaFacebookF />
+                    <FaFacebookF className="social-icon" />
                   </li>
                   <li>
-                    <FaGithub />
+                    <FaGithub className="social-icon" />
                   </li>
                   <li>
-                    <FaInstagram />
+                    <FaInstagram className="social-icon" />
                   </li>
                 </ul>
                 <h1>I am Sanchit Gupta</h1>

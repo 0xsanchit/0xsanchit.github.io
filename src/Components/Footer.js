@@ -7,12 +7,12 @@ function Footer(props) {
       <div className="footer-container">
         <div className="row">
           <div className="footer-col">
-            <h4>company</h4>
+            <h4>Address</h4>
             <ul className="ul-design">
               <li className="li-design">
-                <a href="#">about us</a>
+                <a href="#">Chembur,Mumbai</a>
               </li>
-              <li className="li-design">
+              {/* <li className="li-design">
                 <a href="#">our services</a>
               </li>
               <li className="li-design">
@@ -20,7 +20,7 @@ function Footer(props) {
               </li>
               <li className="li-design">
                 <a href="#">affiliate program</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="footer-col">
@@ -30,9 +30,9 @@ function Footer(props) {
                 <a href="#">FAQ</a>
               </li>
               <li className="li-design">
-                <a href="#">shipping</a>
+                <a href="#">Contact Me</a>
               </li>
-              <li className="li-design">
+              {/* <li className="li-design">
                 <a href="#">returns</a>
               </li>
               <li className="li-design">
@@ -40,29 +40,29 @@ function Footer(props) {
               </li>
               <li className="li-design">
                 <a href="#">payment options</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="footer-col">
-            <h4>online shop</h4>
+            <h4>Contact Details</h4>
             <ul className="ul-design">
               <li className="li-design">
-                <a href="#">watch</a>
+                <a href="#">+918356096223</a>
               </li>
               <li className="li-design">
-                <a href="#">bag</a>
+                <a href="#">sanchitgupta456@gmail.com</a>
               </li>
               <li className="li-design">
-                <a href="#">shoes</a>
+                <a href="#">theiitiancoder@gmail.com</a>
               </li>
-              <li className="li-design">
+              {/* <li className="li-design">
                 <a href="#">dress</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="footer-col">
             <h4>follow us</h4>
-            <div className="social-links">
+            {/* <div className="social-links">
               <a href="#">
                 <i className="fab fa-facebook-f"></i>
               </a>
@@ -75,7 +75,7 @@ function Footer(props) {
               <a href="#">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

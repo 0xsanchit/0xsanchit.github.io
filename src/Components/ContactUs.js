@@ -11,6 +11,7 @@ import {
   FaComment,
   FaUser,
 } from "react-icons/fa";
+import { Button } from "@material-ui/core";
 
 function ContactUs() {
   //   Stop annoying page refresh!
@@ -19,28 +20,48 @@ function ContactUs() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [disable, setDisable] = useState(false);
+  const [buttonText, setButtonText] = useState("Send");
 
   let templateParams;
 
   const sendMessage = () => {
     console.log("Sending");
     templateParams = {
-      from_name: "sanchitgupta456@gmail.com",
-      to_name: "sanchitgupta456@gmail.com",
+      from_name: name,
+      from_email: email,
+      to_name: "Sanchit",
       subject: "Portfolio Website",
       message_html: message,
     };
 
-    emailjs.send("service_uafogsy", "template_ys8u2w8").then(
-      (result) => {
-        console.log("result");
-        console.log(result.text);
-      },
-      (error) => {
-        console.log("error");
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .send(
+        "service_uafogsy",
+        "template_ys8u2w8",
+        templateParams,
+        "user_rETK4wX3g88eX6p8LtdVZ"
+      )
+      .then(
+        (result) => {
+          console.log("result");
+          setButtonText("Message Sent");
+          setTimeout(function () {
+            setButtonText("Send");
+          }, 1000); //wait 2 seconds
+          setName("");
+          setEmail("");
+          setMessage("");
+          console.log(result.text);
+          setDisable(true);
+        },
+        (error) => {
+          setButtonText("Send");
+          console.log("error");
+          console.log(error.text);
+          setDisable(true);
+        }
+      );
 
     // emailjs.send(
     //   "service_uafogsy",
@@ -50,17 +71,26 @@ function ContactUs() {
     // );
   };
 
-  if (submit != null) {
-    submit.addEventListener(
-      "click",
-      (e) => {
-        e.preventDefault();
-        sendMessage();
-        // form.reset();
-      },
-      false
-    );
-  }
+  const submitForm = () => {
+    setDisable(true);
+    setButtonText("Sending");
+    console.log("Submit Called");
+    sendMessage();
+  };
+
+  // if (submit != null) {
+  //   console.log("Added");
+  //   submit.addEventListener(
+  //     "click",
+  //     (e) => {
+  //       console.log("Submit Called");
+  //       e.preventDefault();
+  //       sendMessage();
+  //       // form.reset();
+  //     },
+  //     false
+  //   );
+  // }
 
   return (
     <div>
@@ -107,7 +137,7 @@ function ContactUs() {
                 onChange={(e) => setName(e.target.value)}
               />
             </fieldset>
-            {/* <fieldset>
+            <fieldset>
               <label
                 className="fa fa-envelope"
                 for="email-input"
@@ -122,7 +152,7 @@ function ContactUs() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-            </fieldset> */}
+            </fieldset>
             <fieldset>
               <label
                 className="fa fa-comment"
@@ -139,9 +169,9 @@ function ContactUs() {
               ></textarea>
             </fieldset>
             <fieldset>
-              <button type="submit" id="btn-submit">
-                Send
-              </button>
+              <Button disabled={disable} onClick={submitForm}>
+                {buttonText}
+              </Button>
             </fieldset>
           </form>
         </div>

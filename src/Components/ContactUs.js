@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+
 import ReactDOM from "react-dom";
 import "./ContactUs.css";
 import {
@@ -14,12 +16,50 @@ function ContactUs() {
   //   Stop annoying page refresh!
   const submit = document.querySelector("#btn-submit");
   const form = document.querySelector("#form");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  let templateParams;
+
+  const sendMessage = () => {
+    templateParams = {
+      from_name: "sanchitgupta456@gmail.com",
+      to_name: "sanchitgupta456@gmail.com",
+      subject: "Portfolio Website",
+      message_html: message,
+    };
+
+    emailjs
+      .sendForm(
+        "service_uafogsy",
+        "template_f38bhvd",
+        templateParams,
+        "user_rETK4wX3g88eX6p8LtdVZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    // emailjs.send(
+    //   "service_uafogsy",
+    //   "template_f38bhvd",
+    //   templateParams,
+    //   "user_rETK4wX3g88eX6p8LtdVZ"
+    // );
+  };
 
   if (submit != null) {
     submit.addEventListener(
       "click",
       (e) => {
         e.preventDefault();
+        sendMessage();
         form.reset();
       },
       false
@@ -63,7 +103,13 @@ function ContactUs() {
               <label className="fa fa-user" for="name-input" aria-hidden="true">
                 <FaUser className="form-icon" />
               </label>
-              <input type="text" placeholder="Your name..." id="name-input" />
+              <input
+                type="text"
+                placeholder="Your name..."
+                id="name-input"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
             </fieldset>
             <fieldset>
               <label
@@ -77,6 +123,8 @@ function ContactUs() {
                 type="email"
                 placeholder="Your email..."
                 id="email-input"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </fieldset>
             <fieldset>
@@ -90,6 +138,8 @@ function ContactUs() {
               <textarea
                 placeholder="Your Message..."
                 id="message-input"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </fieldset>
             <fieldset>

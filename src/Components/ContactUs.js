@@ -23,6 +23,7 @@ function ContactUs() {
   let templateParams;
 
   const sendMessage = () => {
+    console.log("Sending");
     templateParams = {
       from_name: "sanchitgupta456@gmail.com",
       to_name: "sanchitgupta456@gmail.com",
@@ -30,21 +31,16 @@ function ContactUs() {
       message_html: message,
     };
 
-    emailjs
-      .sendForm(
-        "service_uafogsy",
-        "template_f38bhvd",
-        templateParams,
-        "user_rETK4wX3g88eX6p8LtdVZ"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.send("service_uafogsy", "template_ys8u2w8").then(
+      (result) => {
+        console.log("result");
+        console.log(result.text);
+      },
+      (error) => {
+        console.log("error");
+        console.log(error.text);
+      }
+    );
 
     // emailjs.send(
     //   "service_uafogsy",
@@ -60,7 +56,7 @@ function ContactUs() {
       (e) => {
         e.preventDefault();
         sendMessage();
-        form.reset();
+        // form.reset();
       },
       false
     );
@@ -111,7 +107,7 @@ function ContactUs() {
                 onChange={(e) => setName(e.target.value)}
               />
             </fieldset>
-            <fieldset>
+            {/* <fieldset>
               <label
                 className="fa fa-envelope"
                 for="email-input"
@@ -126,7 +122,7 @@ function ContactUs() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-            </fieldset>
+            </fieldset> */}
             <fieldset>
               <label
                 className="fa fa-comment"

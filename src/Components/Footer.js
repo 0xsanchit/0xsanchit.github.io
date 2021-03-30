@@ -8,54 +8,54 @@ function Footer(props) {
         <div className="row">
           <div className="footer-col">
             <h4>company</h4>
-            <ul>
-              <li>
+            <ul className="ul-design">
+              <li className="li-design">
                 <a href="#">about us</a>
               </li>
-              <li>
+              <li className="li-design">
                 <a href="#">our services</a>
               </li>
-              <li>
+              <li className="li-design">
                 <a href="#">privacy policy</a>
               </li>
-              <li>
+              <li className="li-design">
                 <a href="#">affiliate program</a>
               </li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>get help</h4>
-            <ul>
-              <li>
+            <ul className="ul-design">
+              <li className="li-design">
                 <a href="#">FAQ</a>
               </li>
-              <li>
+              <li className="li-design">
                 <a href="#">shipping</a>
               </li>
-              <li>
+              <li className="li-design">
                 <a href="#">returns</a>
               </li>
-              <li>
+              <li className="li-design">
                 <a href="#">order status</a>
               </li>
-              <li>
+              <li className="li-design">
                 <a href="#">payment options</a>
               </li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>online shop</h4>
-            <ul>
-              <li>
+            <ul className="ul-design">
+              <li className="li-design">
                 <a href="#">watch</a>
               </li>
-              <li>
+              <li className="li-design">
                 <a href="#">bag</a>
               </li>
-              <li>
+              <li className="li-design">
                 <a href="#">shoes</a>
               </li>
-              <li>
+              <li className="li-design">
                 <a href="#">dress</a>
               </li>
             </ul>

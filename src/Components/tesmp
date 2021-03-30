@@ -1,0 +1,62 @@
+.p-design {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: start;
+  /* margin: 2vmin; */
+}
+
+.ul-design {
+  margin-top: auto;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  /* margin: 2vmin 20vmin; */
+  list-style: none;
+}
+
+.li-design {
+  position: relative;
+  font-weight: 700;
+  transition: 0.25s ease-in-out;
+}
+
+.pressed .li-design:hover {
+  text-shadow: 1px 1px 0px hsl(0, 0%, 5%), -1px -1px 0px hsl(0, 0%, 15%);
+}
+
+.li-design:hover {
+  cursor: pointer;
+  color: hsl(200, 100%, 30%);
+}
+
+.li-design::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: -0.75em;
+  top: 46%;
+  width: 0.3em;
+  height: 0.3em;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 0.1em solid hsl(0, 0%, 20%);
+  background-color: hsl(200, 100%, 50%);
+  transition: 0.125s ease-in-out;
+  box-shadow: 0 0 0.1rem 0.1rem hsla(0, 0%, 50%, 0.25);
+  animation: pulse 1s 1s infinite linear alternate;
+}
+
+@keyframes pulse {
+  from {
+    background-color: hsl(200, 100%, 50%);
+  }
+  to {
+    background-color: hsl(200, 0%, 20%);
+  }
+}
+
+.li-design:hover::before {
+  border-width: 0;
+  background-color: hsl(0, 100%, 50%);
+  box-shadow: 0 0 0.5rem 0.1rem hsla(0, 100%, 50%, 1);
+  animation: none;
+}

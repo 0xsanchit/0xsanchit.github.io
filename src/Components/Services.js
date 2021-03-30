@@ -11,34 +11,26 @@ const Services = () => {
   const [header] = React.useState({
     mainHeader: "SERVICES",
     subHeading: "My Services",
-    text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting\
-    industry. Lorem Ipsum standard dummy text.",
+    text: "Work samples to be updated here . Things I have made ",
   });
   const [state] = React.useState([
     {
       id: 1,
       icon: <FaGithub className="commonIcons" />,
       heading: "Web Development",
-      text:
-        "Lorem Ipsum is simply dummy text of the printing typesetting\
-      industry. simply dummy",
+      text: "Work samples to be updated here . Things I have made ",
     },
     {
       id: 2,
       icon: <FaCamera className="commonIcons" />,
       heading: "Photography",
-      text:
-        "Lorem Ipsum is simply dummy text of the printing typesetting\
-        industry. simply dummy",
+      text: "Work samples to be updated here . Things I have made ",
     },
     {
       id: 3,
       icon: <FaCircleNotch className="commonIcons" />,
       heading: "Web Desing",
-      text:
-        "Lorem Ipsum is simply dummy text of the printing typesetting\
-        industry. simply dummy",
+      text: "Work samples to be updated here . Things I have made ",
     },
   ]);
 
@@ -47,25 +39,19 @@ const Services = () => {
       id: 4,
       icon: <FaApple className="commonIcons" />,
       heading: "App Devlopment",
-      text:
-        "Lorem Ipsum is simply dummy text of the printing typesetting\
-        industry. simply dummy",
+      text: "Work samples to be updated here . Things I have made ",
     },
     {
       id: 5,
       icon: <FaFileVideo className="commonIcons" />,
       heading: "Video Editing",
-      text:
-        "Lorem Ipsum is simply dummy text of the printing typesetting\
-        industry. simply dummy",
+      text: "Work samples to be updated here . Things I have made ",
     },
     {
       id: 6,
       icon: <FaSearchDollar className="commonIcons" />,
       heading: "SEO Expert",
-      text:
-        "Lorem Ipsum is simply dummy text of the printing typesetting\
-        industry. simply dummy",
+      text: "Work samples to be updated here . Things I have made ",
     },
   ]);
   return (

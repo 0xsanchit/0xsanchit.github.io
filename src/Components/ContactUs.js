@@ -37,15 +37,21 @@ function ContactUs() {
             Front-end developer, musician & Costa club card holder. I'm
             interested in design, performance & the future of the web...
           </p>
-          <a className="bio-link" href="https://twitter.com/alexboffey">
+          <a
+            className="bio-link"
+            href="https://www.youtube.com/channel/UCBStHvqSDEF751f0CWd3-Pg"
+          >
             Youtube
             <FaYoutube className="icon" />
           </a>
-          <a className="bio-link" href="https://github.com/alexboffey">
+          <a className="bio-link" href="https://github.com/0xsanchit">
             Github
             <FaGithub className="icon" />
           </a>
-          <a className="bio-link" href="https://codepen.io/alexboffey/">
+          <a
+            className="bio-link"
+            href="https://www.linkedin.com/in/sanchit-gupta-361581189/"
+          >
             LinkedIn
             <FaLinkedin className="icon" />
           </a>

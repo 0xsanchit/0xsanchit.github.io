@@ -13,6 +13,111 @@ import {
   FaQuestion,
   FaAndroid,
 } from "react-icons/fa";
+import { SkillBars } from "react-skills";
+const ReactSkillsData = [
+  {
+    name: "ReactJS",
+    level: 90,
+    color: "blue",
+  },
+  {
+    name: "HTML",
+    level: 85,
+    color: "red",
+  },
+  {
+    name: "CSS",
+    level: 93,
+    color: "blue",
+  },
+];
+
+const EducationSkillsData = [
+  {
+    name: "10th Board",
+    level: 97.8,
+    color: "blue",
+  },
+  {
+    name: "12th Board",
+    level: 97.8,
+    color: "red",
+  },
+  {
+    name: "College CGPA",
+    level: 98.3,
+    color: "blue",
+  },
+];
+
+const SpecialSkillsData = [
+  {
+    name: "Concentration",
+    level: 95,
+    color: "blue",
+  },
+  {
+    name: "Analysis",
+    level: 90,
+    color: "red",
+  },
+  {
+    name: "Code Debugging",
+    level: 98,
+    color: "blue",
+  },
+  {
+    name: "Self Learning",
+    level: 95,
+    color: "red",
+  },
+  {
+    name: "Creativity",
+    level: 85,
+    color: "blue",
+  },
+];
+
+const NodeSkillsData = [
+  {
+    name: "NodeJS",
+    level: 90,
+    color: "blue",
+  },
+  {
+    name: "MongoDB",
+    level: 97,
+    color: "red",
+  },
+  {
+    name: "AWS",
+    level: 90,
+    color: "blue",
+  },
+  {
+    name: "SQL",
+    level: 87,
+    color: "red",
+  },
+];
+
+const AndroidSkillsData = [
+  {
+    name: "Android Studio",
+    level: 98,
+    color: "blue",
+  },
+  {
+    name: "Flutter",
+    level: 90,
+    color: "red",
+  },
+  {
+    name: "React Native",
+    level: 80,
+    color: "blue",
+  },
+];
 
 const Card = (props) => {
   const getStyles = () => {
@@ -44,11 +149,11 @@ const Card = (props) => {
             <h1 className="class-name">{props.title}</h1>
           </div>
           <div className="text">
-            <p className="class-name">{props.text}</p>
+            <p className="text-class-name">{props.text}</p>
           </div>
           <div className="class-name">
             <div onClick={handleClose} className="close-button">
-              <FaTimesCircle size="2x" />
+              <FaTimesCircle size="2x" color="black" />
             </div>
           </div>
 
@@ -125,32 +230,64 @@ const Card = (props) => {
 };
 const RenderCard = (props) => {
   const cards = [
-    { id: 1, icon: "university", title: "Education", text: "A bus." },
+    {
+      id: 1,
+      icon: "university",
+      title: "Education",
+      text: (
+        <React.Fragment>
+          <SkillBars skills={EducationSkillsData} />I did my high school from
+          DPS NaviMumbai. I am doing my{" "}
+          <h4>Computer Science Engineering from IIT Madras </h4>.
+        </React.Fragment>
+      ),
+    },
     {
       id: 2,
       icon: "react",
       title: "React - Frontend",
-      text: "I code websites in react super smoothly",
+      text: (
+        <React.Fragment>
+          <SkillBars skills={ReactSkillsData} /> I develop react applications
+          easily and have made quite many responsive websites in reactjs{" "}
+        </React.Fragment>
+      ),
     },
 
     {
       id: 3,
       icon: "question",
       title: "My Special Skills",
-      text: "A bunch of buses tied together.",
+      text: (
+        <React.Fragment>
+          <SkillBars skills={SpecialSkillsData} />I am good at creativity and
+          bringing up new ideas and implementing them
+        </React.Fragment>
+      ),
     },
     {
       id: 4,
       icon: "node",
       title: "NodeJS - Backend",
-      text: "I code backend in nodejs super smootly",
+      text: (
+        <React.Fragment>
+          <SkillBars skills={NodeSkillsData} />I have worked on and have made
+          many backend servers using both servers and serverless technology
+          (mongoDB and AWS).
+        </React.Fragment>
+      ),
     },
     {
       id: 5,
       icon: "android",
       title: "Android Development",
-      text:
-        "I develop and responsive android apps in android studio and flutter",
+      text: (
+        <React.Fragment>
+          <SkillBars skills={AndroidSkillsData} />I have worked with both
+          flutter and stock android studio and some of the applications are live
+          and running on playstore
+        </React.Fragment>
+      ),
     },
   ];
   const [selectedCard, setSelectedCard] = React.useState(null);

@@ -5,7 +5,7 @@ const About = (props) => {
   const [header] = React.useState({
     subHeader: "About Me",
     text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
+      "Hello , I am Sanchit Gupta , currently pursuing BTech. in CSE from IIT Madras . I am a tech. enthusiast and an avid developer . I like to develop mobile and web applications and love to follow the technology trends . I have an interest in enterprenuership and love to dive in it. Apart from development , I am interested in other domains of CSE like Cyber Security , IOT . ML and AI . I do competitive coding for fun in my free time .",
   });
   const [state] = React.useState([
     { id: 1, title: "Name:", text: "Jonathan Doe" },
@@ -30,15 +30,17 @@ const About = (props) => {
           </div> */}
           <div className="col-12">
             <div className="about__info">
-              <h1>Hi There</h1>
+              <h1>More About Me</h1>
               <div className="about__info-p1">
-                Hello , I am Sanchit . New language found:- bchbhkcbhdabhcba ja
-                jagva
+                I love to develop and create new things , be they mechanical or
+                virtual .<br />I have interest in playing sports like badminton
+                and chess . Deep conversations usually intrigue me . I play a
+                tune on Guitar to calm the environment sometimes .
               </div>
-              <div className="about__info-p2">
+              {/* <div className="about__info-p2">
                 I am Greatest dictator . Please vote me !!ac kn cca c ca cka dna
                 c ak
-              </div>
+              </div> */}
               {/* <div className="info__contacts">
                 <div className="row">
                   {state.map((info) => (

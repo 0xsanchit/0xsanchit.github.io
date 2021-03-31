@@ -27,7 +27,7 @@ function App() {
 
   return (
     <React.Fragment>
-      {loading ? (
+      {/* {loading ? (
         <div className="loader">
           <RingLoader
             color={color}
@@ -37,18 +37,18 @@ function App() {
             width={100}
           />
         </div>
-      ) : (
-        // <div>Hello</div>
-        <div>
-          <Nav />
-          <Banner />
-          <About />
-          <Services />
-          <Experience />
-          <ContactUs />
-          <Footer />
-        </div>
-      )}
+      ) : ( */}
+      {/* // <div>Hello</div> */}
+      <div>
+        <Nav />
+        <Banner />
+        <About />
+        <Services />
+        <Experience />
+        <ContactUs />
+        <Footer />
+      </div>
+      {/* )} */}
     </React.Fragment>
   );
 }

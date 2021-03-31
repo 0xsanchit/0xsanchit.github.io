@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.loader {
+  background-color: rgb(208, 191, 255);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }

@@ -26,30 +26,30 @@ function App() {
   }, []);
 
   return (
-    <React.Fragment>
-      {/* {loading ? (
-        <div className="loader">
-          <RingLoader
-            color={color}
-            loading={loading}
-            size={300}
-            height={300}
-            width={100}
-          />
-        </div>
-      ) : ( */}
-      {/* // <div>Hello</div> */}
-      <div>
-        <Nav />
-        <Banner />
-        <About />
-        <Services />
-        <Experience />
-        <ContactUs />
-        <Footer />
-      </div>
-      {/* )} */}
-    </React.Fragment>
+    // <React.Fragment>
+    //   {/* {loading ? (
+    //     <div className="loader">
+    //       <RingLoader
+    //         color={color}
+    //         loading={loading}
+    //         size={300}
+    //         height={300}
+    //         width={100}
+    //       />
+    //     </div>
+    //   ) : ( */}
+    //   {/* // <div>Hello</div> */}
+    <div>
+      <Nav />
+      <Banner />
+      <About />
+      <Services />
+      <Experience />
+      <ContactUs />
+      <Footer />
+    </div>
+    //   {/* )} */}
+    // </React.Fragment>
   );
 }
 

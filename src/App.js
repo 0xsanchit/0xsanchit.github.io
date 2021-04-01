@@ -8,8 +8,8 @@ import Footer from "./Components/Footer";
 import ContactUs from "./Components/ContactUs";
 import { useEffect, useState } from "react";
 import React from "react";
-import RingLoader from "react-spinners/RingLoader";
-import { Container } from "@material-ui/core";
+// import RingLoader from "react-spinners/RingLoader";
+// import { Container } from "@material-ui/core";
 
 // import RenderCard from "./Components/Card";
 

@@ -94,7 +94,7 @@ function ContactUs() {
 
   return (
     <div>
-      <div className="main">
+      <div className="main" id="contact">
         <div className="bio">
           {/* <img className="profile-img" src={me1} /> */}
           <img src="/images/me11.png" alt="me1" className="profile-img" />

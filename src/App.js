@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import RingLoader from "react-spinners/RingLoader";
 import { Container } from "@material-ui/core";
+import { Element } from "react-scroll";
 
 // import RenderCard from "./Components/Card";
 
@@ -43,7 +44,10 @@ function App() {
           <Banner />
           <About />
           <Services />
-          <Experience />
+          <Element id="experience" name="experience">
+            <Experience />{" "}
+          </Element>
+
           <ContactUs />
           <Footer />
         </div>

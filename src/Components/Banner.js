@@ -12,7 +12,7 @@ import ReactTypingEffect from "react-typing-effect";
 
 const Banner = () => {
   return (
-    <div className="header">
+    <div className="header" id="home">
       <div className="particles">
         <ParticlesBg type="cobweb" color="0000ff" bg={true} />
       </div>

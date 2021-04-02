@@ -1,0 +1,5 @@
+.hover-li:hover {
+  cursor: pointer;
+  color: aqua;
+  transform: scale(1.2);
+}

@@ -8,8 +8,8 @@ import Footer from "./Components/Footer";
 import ContactUs from "./Components/ContactUs";
 import { useEffect, useState } from "react";
 import React from "react";
-// import RingLoader from "react-spinners/RingLoader";
-// import { Container } from "@material-ui/core";
+import RingLoader from "react-spinners/RingLoader";
+import { Container } from "@material-ui/core";
 
 // import RenderCard from "./Components/Card";
 
@@ -26,30 +26,29 @@ function App() {
   }, []);
 
   return (
-    // <React.Fragment>
-    //   {/* {loading ? (
-    //     <div className="loader">
-    //       <RingLoader
-    //         color={color}
-    //         loading={loading}
-    //         size={300}
-    //         height={300}
-    //         width={100}
-    //       />
-    //     </div>
-    //   ) : ( */}
-    //   {/* // <div>Hello</div> */}
-    <div>
-      <Nav />
-      <Banner />
-      <About />
-      <Services />
-      <Experience />
-      <ContactUs />
-      <Footer />
-    </div>
-    //   {/* )} */}
-    // </React.Fragment>
+    <React.Fragment>
+      {loading ? (
+        <div className="loader">
+          <RingLoader
+            color={color}
+            loading={loading}
+            size={300}
+            height={300}
+            width={100}
+          />
+        </div>
+      ) : (
+        <div>
+          <Nav />
+          <Banner />
+          <About />
+          <Services />
+          <Experience />
+          <ContactUs />
+          <Footer />
+        </div>
+      )}
+    </React.Fragment>
   );
 }
 

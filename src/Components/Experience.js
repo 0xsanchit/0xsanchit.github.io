@@ -473,7 +473,7 @@ function Experience() {
                        - Worked as a Full Stack Developer to develop their Website . Worked on react-calendar , Chakra-UI , nodejs etc. 
                         </p>
                         <li className="li-design">
-                    Started my Internship at Digital Outcomes (Data Scientist)
+                    Started my Internship at Digital Outcomes (Data Scientistg)
                 </li>
                 <p className="li_text">
                        - Worked as a DataScientist to develop a ML product for Prospect-Intelligence . The python program I created , parses the linkedIn profile of a User and then applies some models combined with other data to give you important details which can be used to sell him products . 

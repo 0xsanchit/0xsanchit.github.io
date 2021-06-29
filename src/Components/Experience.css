@@ -16,6 +16,12 @@
   overflow-x: hidden;
 }
 
+.li_text {
+  font-size: small;
+  margin-top: -2%;
+  margin-left: 5%;
+}
+
 .surface {
   height: 140px;
   width: 5000px;

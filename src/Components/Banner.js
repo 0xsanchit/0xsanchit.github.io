@@ -19,9 +19,9 @@ const Banner = () => {
       <div className="container">
         <div className="row">
           <div className="col-6">
+            
             <div className="header_content">
-              <div className="header_section">
-                <ul className="header_ul">
+            <ul className="header_ul">
                   <li className="li-design">
                     <a href="https://www.linkedin.com/in/sanchit-gupta-361581189/">
                       <FaLinkedin className="social-icon" />
@@ -47,7 +47,13 @@ const Banner = () => {
                       <FaInstagram className="social-icon" />
                     </a>
                   </li>
+                  <li className="li-design">
+                    <a href="https://www.instagram.com/_sanchitgupta/">
+                      <FaInstagram className="social-icon" />
+                    </a>
+                  </li>
                 </ul>
+              <div className="header_section">
                 <h1>
                   Hello <br />
                   <br />I am{" "}
@@ -103,7 +109,7 @@ const Banner = () => {
                         </h1>
                       );
                     }}
-                    speed={200}
+                    speed={300}
                     typingDelay={100}
                     eraseSpeed={50}
                     eraseDelay={200}

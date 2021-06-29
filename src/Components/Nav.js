@@ -45,7 +45,7 @@ const Nav = () => {
                 className="hover-li"
                 activeClass="some-active-class"
               >
-                Services
+                Works
               </ScrollLink>
             </li>
             <li className="hover-li">

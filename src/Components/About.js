@@ -5,7 +5,7 @@ const About = (props) => {
   const [header] = React.useState({
     subHeader: "About Me",
     text:
-      "Hello , I am Sanchit Gupta , currently pursuing BTech. in CSE from IIT Madras . I am a tech. enthusiast and an avid developer . I like to develop mobile and web applications and love to follow the technology trends . I have an interest in enterprenuership and love to dive in it. Apart from development , I am interested in other domains of CSE like Cyber Security , IOT . ML and AI . I do competitive coding for fun in my free time .",
+      "Hello , I am Sanchit Gupta , currently pursuing BTech. in CSE from IIT Madras . I am a tech. enthusiast and an avid developer . I like to develop mobile and web applications and love to follow the technology trends . I have an interest in enterprenuership and love to dive in it. Apart from development , I am interested in other domains of CSE like Cyber Security , IOT . ML and AI . I do competitive coding for fun in my free time . CodeChef - 2022 Max rating",
   });
   const [state] = React.useState([
     { id: 1, title: "Name:", text: "Jonathan Doe" },

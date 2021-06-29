@@ -280,8 +280,13 @@ function Experience() {
               <ul className="ul-design">
                 <li className="li-design">Completed 12th board</li>
                 <li className="li-design">
-                  Created my own Android Application for JEE mentorship
+                  Created my own Android Application for JEE mentorship - Trajektory on Google Play ( <a href="https://play.google.com/store/apps/details?id=com.sanchit.trajektory">Link</a> )
                 </li>
+                <p className="li_text">
+                       - Worked on Android Studio (Java) + Firebase (Backend)<br/>
+                       - Integrated Push Notifications + Mentor Matching Algorithm<br/>
+                       - Integrated Google Ads + course Material <br/>
+                       - Gave Realtime chat feature to user using Firebase </p>
               </ul>
             </p>
           </div>
@@ -293,9 +298,15 @@ function Experience() {
                   Interned at Relnto (Nirmaan incubated startup) - Android App
                   Development
                 </li>
+                <p className="li_text">
+                       - Created an Android Application to help People in College to Rent and Lend things on this platform and manage the delivery , payment and gaurantee of their items . ( <a href="https://github.com/0xsanchit/Relnto">Project Link</a> )
+                        </p>
                 <li className="li-design">
                   Started my Intern at Melvano as a Content Developer
                 </li>
+                <p className="li_text">
+                       - Helped Solve Doubts and questions for students preparing for JEE 
+                        </p>
               </ul>
             </p>
           </div>
@@ -304,13 +315,25 @@ function Experience() {
             <p className="p-design">
               <ul className="ul-design">
                 <li className="li-design">Completed my Intern at Relnto</li>
+                <p className="li_text">
+                       - The Application was completed but the seniors graduated and it couldnt be launched . 
+                        </p>
                 <li className="li-design">Completed my intern at Melvano</li>
+                <p className="li_text">
+                       - Solved 1000+ questions at Melvano 
+                        </p>
                 <li className="li-design">
                   Worked at Toppr as a Content Developer
                 </li>
+                <p className="li_text">
+                       - Started at Toppr to help students preparing for JEE
+                        </p>
                 <li className="li-design">
                   Interned at Verzeo in partner with Microsoft - Cyber Security{" "}
                 </li>
+                <p className="li_text">
+                       - Worked on Cyber Security Fundamentals , such as learning Kali Linux , working with wifi scanners , learning to crack basic WEP , WPA , WPA2 . Airmon-ng , little bit of SQL Injection .
+                        </p>
               </ul>
             </p>
           </div>
@@ -321,6 +344,18 @@ function Experience() {
                 <li className="li-design">
                   Worked at Toppr as a Content Developer
                 </li>
+                <p className="li_text">
+                       - Started at Toppr to help students preparing for JEE
+                    </p>
+                        <li className="li-design">
+                  Worked at Photo Book (Nirmaan Incubated StartUp) as Android Developer
+                </li>
+                <p className="li_text">
+                       - Worked on Android Studio (Java) + Firebase (Backend)
+                    <br/> - Integrated Razorpay payment gateway <br/>
+                    - User has the functionality to upload photos and get their photobook created and mailed to them in various designs 
+                  </p>
+
               </ul>
             </p>{" "}
           </div>
@@ -331,6 +366,20 @@ function Experience() {
                 <li className="li-design">
                   Started my Internship at SignTalk - Web Developer (ReactJS)
                 </li>
+                <p className="li_text">
+                      - Learn React Basics , learnt JavaScript <br/>
+                      - Explored the CodeBase and understood it <br/>
+                      - Worked on a guided automated tour of the Website from scratch 
+                </p>
+                <li className="li-design">
+                  Started and Completed Internship at Campo - Marketing and Research
+                </li>
+                <p className="li_text">
+                      - Created posters for the Company <br/>
+                      - Explored their business ideas and gave insights <br/>
+                      - Contacted customers to sell them the services  <br/>
+                      - Contacted companies to sell the new Game developed by Campo <br/>
+                </p>
               </ul>
             </p>
           </div>
@@ -341,9 +390,18 @@ function Experience() {
                 <li className="li-design">
                   Continued my Internship at SignTalk - Web Developer (ReactJS)
                 </li>
+                <p className="li_text">
+                      - Worked on the whole Login System and navbar and creating questions <br/>
+                      - Working on the quiz system
+                </p>
                 <li className="li-design">
-                  Started Internship at Eduvisory - Web Developer (ReactJS)
+                  Started Internship at Eduvisory - Full Stack Developer
                 </li>
+                <p className="li_text">
+                      - Worked to create forms and submit contact info using MongoDB<br/>
+                      - Worked to do research and provide them information about payment gateways 
+                </p>
+
               </ul>
             </p>
           </div>
@@ -354,9 +412,24 @@ function Experience() {
                 <li className="li-design">
                   Winter Intern at Newzera - Mobile App Developer (React Native)
                 </li>
+                <p className="li_text">
+                       - Worked on React Native (Frontend) + AWS (Backend) + GraphQL (Backend) <br/>
+                       - Learn VTL language and created some Pipelines for Chat features . 
+                        </p>
                 <li className="li-design">
-                  Continued my Intern at SignTalk as Web Developer (ReactJS)
+                  Continued my Intern at SignTalk as Web Developer (ReactJS) ( <a href="https://signtalk.in/learnisl/learn/">Link</a> )
                 </li>
+                <p className="li_text">
+                      - Worked on Integrating Video-React features 
+                  <br/>- Worked on Integrating Quiz features 
+                </p>
+                <li className="li-design">
+                  Worked at CampK12 
+                </li>
+                <p className="li_text">
+                      - Helped students of all classes learn coding in MIT AppInventor 
+                      - Helped them make various mobile apps 
+                </p>
               </ul>
             </p>
           </div>
@@ -367,6 +440,25 @@ function Experience() {
                 <li className="li-design">
                   Continued my Intern at SignTalk as Web Developer (ReactJS)
                 </li>
+                <p className="li_text">
+                       - Revamped the dashboard page using React-slick and material UI . Created swivel and fade animation . <br/>
+                       - Created cards for Island Levels and created animatins . 
+                        </p>
+                    <li className="li-design">
+                  Worked on my StartUp (Android Application) - Upsilon ( <a href="https://play.google.com/store/apps/details?id=com.sanchit.Upsilon">Link</a> )
+                </li>
+                <p className="li_text">
+                       - An Android Application to help connect students to tutors . <br/>
+                       - Promotes local tutors business as well as easy online / offline class management <br/>
+                       - Android Studio (Java) + Node JS + MongoDB Realm
+                        </p>
+                        <li className="li-design">
+                  Worked on my BlockChain Project (FlashLoans + Arbitrage) ( <a href="https://github.com/0xsanchit/FlashLoan">Link</a> )
+                </li>
+                <p className="li_text">
+                       - Uses Aave Flash Loan + Solidity Contract to borrow a huge amount of crypto without collateral just for 1 transaction . <br/>
+                       - Can be combined with Arbitrage to prune high profits . (Working on this)
+                        </p>
               </ul>
             </p>
           </div>
@@ -374,7 +466,30 @@ function Experience() {
             <p>Year 2021, Quarter 2</p>
             <p className="p-design">
               <ul className="ul-design">
-                <li className="li-design"></li>
+                <li className="li-design">
+                    Started my Internship at MentorMatch (Full Stack Developer)
+                </li>
+                <p className="li_text">
+                       - Worked as a Full Stack Developer to develop their Website . Worked on react-calendar , Chakra-UI , nodejs etc. 
+                        </p>
+                        <li className="li-design">
+                    Started my Internship at Digital Outcomes (Data Scientist)
+                </li>
+                <p className="li_text">
+                       - Worked as a DataScientist to develop a ML product for Prospect-Intelligence . The python program I created , parses the linkedIn profile of a User and then applies some models combined with other data to give you important details which can be used to sell him products . 
+                        </p>
+                    <li className="li-design">
+                    Started and Completed my Internship at Caanvi ( MIT Based StartUp )
+                </li>
+                <p className="li_text">
+                       - Worked as a React JS Webdeveloper to develop their front-end . 
+                        </p>
+                        <li className="li-design">
+                    Worked as Freelancer for a foreign Company ( Bookit Sports - California ) to integrate MongoDB Realm (Backend) for Chat Features
+                </li>
+                <p className="li_text">
+                       - Worked as a freelancer to help them integrate MongoDB Realm Sync in their android application for their chat feature
+                        </p>
               </ul>
             </p>
           </div>
@@ -382,7 +497,22 @@ function Experience() {
             <p>Year 2021, Quarter 3</p>
             <p className="p-design">
               <ul className="ul-design">
-                <li className="li-design"></li>
+              <li className="li-design">
+                    Continued my Internship at MentorMatch 
+                </li>
+                <p className="li_text">
+                       - Continued as a Full Stack Developer to develop their Website . Worked on react-calendar , Chakra-UI , nodejs etc. 
+                        </p>
+                        <li className="li-design">
+                    Continued my Internship at Digital Outcomes 
+                </li>
+                <p className="li_text">
+                       - Worked as a DataScientist to develop a ML product for Prospect-Intelligence . The python program I created , parses the linkedIn profile of a User and then applies some models combined with other data to give you important details which can be used to sell him products . 
+                        </p>
+                        <li className="li-design">
+                    Continued my Work at my startUp Upsilon
+                </li>
+    
               </ul>
             </p>
           </div>

@@ -6,11 +6,15 @@ import {
   FaApple,
   FaFileVideo,
   FaSearchDollar,
+  FaAndroid,
+  FaUnity,
+  FaBitcoin,
+  FaDatabase
 } from "react-icons/fa";
 const Services = () => {
   const [header] = React.useState({
-    mainHeader: "SERVICES",
-    subHeading: "My Services",
+    mainHeader: "My Works",
+    subHeading: "My Works",
     text: "Work samples to be updated here . Things I have made ",
   });
   const [state] = React.useState([
@@ -22,14 +26,14 @@ const Services = () => {
     },
     {
       id: 2,
-      icon: <FaCamera className="commonIcons" />,
-      heading: "Photography",
+      icon: <FaUnity className="commonIcons" />,
+      heading: "Game Development",
       text: "Work samples to be updated here . Things I have made ",
     },
     {
       id: 3,
-      icon: <FaCircleNotch className="commonIcons" />,
-      heading: "Web Desing",
+      icon: <FaBitcoin className="commonIcons" />,
+      heading: "Blockchain developer",
       text: "Work samples to be updated here . Things I have made ",
     },
   ]);
@@ -37,20 +41,20 @@ const Services = () => {
   const [state1] = React.useState([
     {
       id: 4,
-      icon: <FaApple className="commonIcons" />,
-      heading: "App Devlopment",
+      icon: <FaAndroid className="commonIcons" />,
+      heading: "App Development",
       text: "Work samples to be updated here . Things I have made ",
     },
     {
       id: 5,
-      icon: <FaFileVideo className="commonIcons" />,
-      heading: "Video Editing",
+      icon: <FaDatabase className="commonIcons" />,
+      heading: "ML and DataScience",
       text: "Work samples to be updated here . Things I have made ",
     },
     {
       id: 6,
       icon: <FaSearchDollar className="commonIcons" />,
-      heading: "SEO Expert",
+      heading: "Finance and Trading",
       text: "Work samples to be updated here . Things I have made ",
     },
   ]);
